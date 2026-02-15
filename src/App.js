@@ -229,7 +229,7 @@ function TrackerCard({ tracker, active, index, onSelect, progress }) {
 export default function App() {
   const currentDay    = getCurrentDay();
   const [activeTracker, setActiveTracker] = useState(0);
-  const [prevTracker,   setPrevTracker]   = useState(0);
+  const [, setPrevTracker] = useState(0);
   const [transitioning, setTransitioning] = useState(false);
   const [direction,     setDirection]     = useState(1);
   const [headerVis,     setHeaderVis]     = useState(true);
